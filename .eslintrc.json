@@ -4,8 +4,7 @@
         "es2021": true
     },
     "extends": [
-        "plugin:import/errors",
-        "plugin:import/warnings",
+        "airbnb-base",
         "plugin:import/typescript"
     ],
     "parser": "@typescript-eslint/parser",
@@ -17,5 +16,12 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never"
+            }
+        ]
     }
 }
