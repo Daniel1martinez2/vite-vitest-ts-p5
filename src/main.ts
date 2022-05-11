@@ -3,7 +3,6 @@ import p5 from 'p5';
 import Ball from './ball';
 
 const myBall = new Ball(34);
-console.log(myBall);
 
 const sketch = (p:p5) => {
   // eslint-disable-next-line no-param-reassign
@@ -15,6 +14,7 @@ const sketch = (p:p5) => {
     p.background(0);
     p.fill(255, 255, 0);
     p.ellipse(200, 200, 50, 50);
+    myBall.show(p);
   };
 };
 // eslint-disable-next-line new-cap
