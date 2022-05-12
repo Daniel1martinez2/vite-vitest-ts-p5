@@ -13,7 +13,11 @@ const sketch = (p:p5) => {
   // eslint-disable-next-line no-param-reassign
   p.draw = () => {
     p.background(0);
-    myBall.draw();
+
+    p.fill(255, 255, 0);
+    p.ellipse(200, 200, 50, 50);
+    myBall.show(p);
+
   };
 };
 // eslint-disable-next-line new-cap
